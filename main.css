@@ -33,48 +33,14 @@ h1 {
 
 }
 
-.grid-container3 {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
-  grid-template-rows: 0.5fr 1fr 1.3fr 0.7fr;
-  grid-template-areas:
-    "nav-bar nav-bar nav-bar nav-bar"
-    ". title title ."
-    ". about about ."
-    ". contact contact .";
-}
-
-.title {
-  grid-area: title;
-  padding: 100px;
-  text-align: center;
-  font-family: 'Fjalla One', sans-serif;
-}
-
-.about {
-  grid-area: about;
-  font-family: 'Fjalla One', sans-serif;
-  text-align: center;
-}
-
-.about2 {
-  padding-top: 20px;
-}
-
-.links {
-  grid-area: contact;
-  display: flex;
-  justify-content: center;
-}
 
 .navbar {
   grid-area: nav-bar;
   background-color: rgb(53, 51, 51);
   min-height: 4vh;
   width: 100%;
+  padding: 20px;
   display: flex;
-  margin: auto;
-  padding-top: 20px;
   justify-content: space-around;
   position: fixed;
 }
@@ -82,8 +48,7 @@ h1 {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30vw;
-  padding-bottom: 20px;
+  width: 40vw;
 }
 
 .nav-links a {
@@ -91,6 +56,7 @@ h1 {
   text-decoration: none;
   letter-spacing: 3px;
   font-size: 17px;
+  padding: 30px;
   font-family: 'Fjalla One', sans-serif;
 }
 
@@ -266,16 +232,6 @@ a:visited {
   font-family: 'Fjalla One', sans-serif;
 }
 
-.grid-container2 {
-  display: grid;
-  grid-template-columns: 1 fr 1fr 1fr;
-  grid-template-rows: 0.05fr 0.3fr 1fr;
-  grid-template-areas:
-    "nav-bar nav-bar nav-bar"
-    "image image image"
-    "image image image";
-  height: 100vh
-}
 
 @media only screen and (max-width: 1300px) {
   .grid-container {

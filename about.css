@@ -1,0 +1,124 @@
+.grid-container3 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    grid-template-rows: 0.2fr 0.5fr 1.3fr 0.7fr;
+    grid-template-areas:
+      "nav-bar nav-bar nav-bar nav-bar"
+      ". title title ."
+      ". about about ."
+      ". contact contact .";
+  }
+
+  .navbar {
+    grid-area: nav-bar;
+    background-color: rgb(53, 51, 51);
+    min-height: 2vh;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    position: fixed;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+  }
+  
+  .nav-links a {
+    color: rgb(185, 136, 151);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-family: 'Fjalla One', sans-serif;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+    padding: 0;
+  }
+
+  .title {
+    grid-area: title;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+  }
+  
+  .about {
+    grid-area: about;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+  }
+  
+  .about2 {
+    padding-top: 20px;
+  }
+  
+  .links {
+    grid-area: contact;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mail {
+      height: 20px;
+      padding: 20px;
+  }
+
+  .github {
+      height: 20px;
+      padding: 20px;
+  }
+
+  .linkedin {
+      height: 20px;
+      padding-top: 20px;
+  }
+
+  @media only screen and (max-width:770px) {
+    .grid-container3 {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0.2fr 0.2fr 1.3fr 0.7fr;
+        grid-template-areas:
+          "nav-bar nav-bar nav-bar nav-bar"
+          ". title title ."
+          ". about about ."
+          ". contact contact .";
+      }
+
+    .title {
+        padding-top: 0;
+    }
+
+    .nav-links {
+        width: 60vw;
+    }
+  }
+
+  @media only screen and (max-width:530px) {
+    .grid-container3 {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+        grid-template-rows: 0.2fr 0.2fr 1.3fr 0.7fr;
+        grid-template-areas:
+          "nav-bar nav-bar nav-bar nav-bar"
+          ". title title ."
+          ". about about ."
+          ". contact contact .";
+      }
+
+    .title {
+        padding-top: 0;
+    }
+
+    .nav-links {
+        width: 80vw;
+    }
+  }

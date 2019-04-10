@@ -22,10 +22,9 @@ html {
 .navbar {
     grid-area: nav-bar;
     background-color: rgb(53, 51, 51);
-    min-height: 3vh;
+    min-height: 2vh;
     width: 100%;
     display: flex;
-    padding-top: 20px;
     justify-content: space-around;
     position: fixed;
 }
@@ -37,7 +36,7 @@ html {
 }
 
 .nav-links a {
-    color: white;
+    color: rgb(185, 136, 151);
     text-decoration: none;
     letter-spacing: 3px;
     font-size: 17px;

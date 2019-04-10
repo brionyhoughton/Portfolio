@@ -22,7 +22,7 @@ h1 {
   grid-template-columns: 0.5fr 0.2fr 0.2fr 0.2fr 0.5fr;
   grid-template-rows: 0.3fr 0.2fr 0.2fr 1fr 1fr 1fr;
   grid-template-areas:
-  "nav-bar nav-bar nav-bar nav-bar nav-bar"
+    "nav-bar nav-bar nav-bar nav-bar nav-bar"
     "image image image image image"
     "project project project project project"
     ". project1 project2 project3 ."
@@ -32,16 +32,18 @@ h1 {
   column-gap: 10px;
 
 }
+
 .grid-container3 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 1fr 1.3fr 0.7fr;
-  grid-template-areas: 
-  "nav-bar nav-bar nav-bar nav-bar"
-   ". title title ."
-   ". about about ."
-   ". contact contact .";
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  grid-template-rows: 0.5fr 1fr 1.3fr 0.7fr;
+  grid-template-areas:
+    "nav-bar nav-bar nav-bar nav-bar"
+    ". title title ."
+    ". about about ."
+    ". contact contact .";
 }
+
 .title {
   grid-area: title;
   padding: 100px;
@@ -52,33 +54,17 @@ h1 {
 .about {
   grid-area: about;
   font-family: 'Fjalla One', sans-serif;
+  text-align: center;
 }
+
+.about2 {
+  padding-top: 20px;
+}
+
 .links {
   grid-area: contact;
   display: flex;
   justify-content: center;
-}
-.text {
-  position: absolute;
-  text-align: left;
-  font-size: 40px;
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  padding: 300px;
-  padding-top: 300px;
-  color: rgb(48, 45, 45);
-  letter-spacing: 2px;
-}
-
-em {
-  font-size: 20px;
-}
-
-.image {
-  grid-area: image;
-  background-image: url(./Images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
 
 .navbar {
@@ -87,7 +73,7 @@ em {
   min-height: 4vh;
   width: 100%;
   display: flex;
-  padding: 20px;
+  padding-top: 40px;
   justify-content: space-around;
   position: fixed;
 }
@@ -233,10 +219,12 @@ h5 {
   height: 40px;
   margin: 5px;
 }
+
 .linkedin {
   height: 40px;
   margin: 5px;
 }
+
 .mail {
   height: 40px;
   margin: 5px;
@@ -268,20 +256,22 @@ a:visited {
 .btn:hover {
   background-color: #eed4d4;
   letter-spacing: 2px;
-  /* border-radius: 10%; */
 }
+
 .about {
   grid-area: about;
   padding: 20px;
   font-family: 'Fjalla One', sans-serif;
 }
+
 .grid-container2 {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 1.8fr;
-  grid-template-areas: 
-  "nav-bar" 
-  "image";
+  grid-template-columns: 1 fr 1fr 1fr;
+  grid-template-rows: 0.05fr 0.3fr 1fr;
+  grid-template-areas:
+    "nav-bar nav-bar nav-bar"
+    "image image image"
+    "image image image";
   height: 100vh
 }
 
@@ -407,6 +397,7 @@ a:visited {
   .nav-links {
     width: 50%;
   }
+
   .nav-links a {
     font-size: 13px;
   }
@@ -414,9 +405,11 @@ a:visited {
   h1 {
     font-size: 20px;
   }
+
   h2 {
     font-size: 13px;
   }
+
   h5 {
     font-size: 10px;
   }
@@ -441,6 +434,7 @@ a:visited {
   .nav-links {
     width: 50%;
   }
+
   .nav-links a {
     font-size: 13px;
   }
@@ -448,6 +442,7 @@ a:visited {
   h1 {
     font-size: 15px;
   }
+
   h5 {
     font-size: 8px;
   }
@@ -456,7 +451,7 @@ a:visited {
     margin: 10px;
   }
 
-.project1 {
+  .project1 {
     height: 250px;
     width: 200px;
   }
@@ -542,72 +537,41 @@ a:visited {
     column-gap: 10px;
   }
 
-.projects {
-  grid-column: 1 / span 3;
-}
+  .projects {
+    grid-column: 1 / span 3;
+  }
 
-.nav-links {
-  width: 80%;
-}
+  .nav-links {
+    width: 80%;
+  }
+
   .project1 {
     grid-area: project1;
     width: 250px;
   }
+
   .project2 {
     grid-area: project2;
     width: 250px;
   }
+
   .project3 {
     grid-area: project3;
     width: 250px;
   }
+
   .project4 {
     grid-area: project4;
     width: 250px;
-  }  
+  }
+
   .project5 {
     grid-area: project5;
     width: 250px;
   }
+
   .project6 {
     grid-area: project6;
     width: 250px;
-  }
-}
-
-@media only screen and (max-width:780px) {
-  .grid-container2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1.8fr;
-    grid-template-areas: 
-    "nav-bar" 
-    "image";
-    height: 100vh
-  }
-  .image {
-    width: 100vw;
-  }
-  .navbar {
-    width: 100vw
-  }
-  .text {
-    padding: 80px;
-    padding-top: 150px;
-  }
-  p {
-    font-size: 25px;
-  }
-  em {
-    font-size: 15px
-  }
-  .github {
-    height: 25px;
-  }
-  .linkedin {
-    height: 25px;
-  }
-  .mail{
-    height: 25px;
   }
 }

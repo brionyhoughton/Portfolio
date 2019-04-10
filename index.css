@@ -1,0 +1,139 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-image: url(./Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.05fr 0.2fr 1fr;
+    grid-template-areas:
+        "nav-bar nav-bar nav-bar"
+        ". . ."
+        ". image .";
+    height: 100vh
+}
+
+.navbar {
+    grid-area: nav-bar;
+    background-color: rgb(53, 51, 51);
+    min-height: 3vh;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 17px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    padding: 0;
+}
+
+.text {
+    grid-area: image;
+    margin-top: 09;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: rgb(48, 45, 45);
+    letter-spacing: 2px;
+}
+
+p {
+    font-size: 70px;
+    margin: 20px;
+}
+
+em {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.github {
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.linkedin {
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.mail {
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:1350px) {
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+        grid-template-rows: 0.05fr 0.2fr 1fr;
+        grid-template-areas:
+            "nav-bar nav-bar nav-bar"
+            ". . ."
+            ". image .";
+        height: 100vh;
+    }
+
+    .navbar {
+        grid-area: nav-bar;
+    }
+
+    .nav-links {
+        width: 50%;
+    }
+
+    @media only screen and (max-width: 730px) {
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: 0.2fr 1.5fr 0.2fr;
+            grid-template-rows: 0.05fr 0.1fr 1fr;
+            grid-template-areas:
+                "nav-bar nav-bar nav-bar"
+                ". . ."
+                ". image .";
+            height: 100vh;
+        }
+
+        .navbar {
+            grid-area: nav-bar;
+        }
+
+        .nav-links {
+            width: 85%;
+        }
+
+        em {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 35px;
+        }
+    }

@@ -20,10 +20,9 @@ h1 {
   display: grid;
   height: 100%;
   grid-template-columns: 0.5fr 0.2fr 0.2fr 0.2fr 0.5fr;
-  grid-template-rows: 0.3fr 0.2fr 0.2fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.2fr 1fr 1fr 1fr;
   grid-template-areas:
     "nav-bar nav-bar nav-bar nav-bar nav-bar"
-    "image image image image image"
     "project project project project project"
     ". project1 project2 project3 ."
     ". project4 project5 project6 ."
@@ -39,7 +38,7 @@ h1 {
   background-color: rgb(53, 51, 51);
   min-height: 4vh;
   width: 100%;
-  padding: 20px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -73,7 +72,7 @@ h1 {
   height: 100px;
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
-  padding: 100px;
+  padding: 50px;
 }
 
 .project1 {

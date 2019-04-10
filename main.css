@@ -73,7 +73,8 @@ h1 {
   min-height: 4vh;
   width: 100%;
   display: flex;
-  /* padding-top: 40px; */
+  margin: auto;
+  padding-top: 20px;
   justify-content: space-around;
   position: fixed;
 }
@@ -85,7 +86,7 @@ h1 {
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(185, 136, 151);
   text-decoration: none;
   letter-spacing: 3px;
   font-size: 17px;
